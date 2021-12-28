@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Homepage</title>
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <link href="fonts.css" rel="stylesheet">
+    </head>
+    <body  onload="initClock()">
+        <header class="site-heaader">
+            <nav class="container"><!--For navigation bar-->
+                <div class="logo"><a href="homepage.html">TeslaGadget</a></div>
+                <div class="main-nav" >
+                    <ul>
+                        <li>
+                            <a href="profile.html" class="nav">Product</a>
+                        </li>
+                        <li>
+                            <a href="bookHome.html" class="nav">Blog</a>
+                        </li>
+                        <li>
+                            <a href="bookHome.html" class="nav">Research</a>
+                        </li>
+                        <li>
+                            <a href="contactus.html" class="nav">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content"><!--For main content-->
+                <section class="container">
+                    <h3>Welcome to Tesla Gadget</h3>
+                    <h1>Famous Brands <span class="change_content"></span></h1>
+                    <p>Contact us for all Gadgets</p>
+                    <div class="datetime">
+                        <div class="date">
+                            <span id="dayname">Day</span>,
+                            <span id="month">Month</span>
+                            <span id="daynum">00</span>,
+                            <span id="year">Year</span>
+                        </div>
+                        <div class="time">
+                            <span id="hour">00</span>:
+                            <span id="minutes">00</span>:
+                            <span id="seconds">00</span>
+                            <span id="period">AM</span>
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+        </header>
+        <footer id="pageFooter"><!--For page footer-->
+            <span>Copyright &copy; 2020.</span>
+            <a href="contactUs.html">Contact Us</a>
+         </footer>
+
+         <!--Digital Clock-->
+
+        <script src="js/index.js">
+        </script>
+
+    </body>
+</html>

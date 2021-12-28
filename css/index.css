@@ -1,0 +1,266 @@
+*{
+    margin: 0; /* Extra margin given by Browser is neglected*/
+    padding: 0; /* Extra padding given by Browser is neglected*/
+    box-sizing: border-box;/*Container extra padding margin is added which is neglected*/
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+body{  /* for tag*/
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('../image/background.jpg');/*For gradient effect and background image*/
+    background-size:100% 100%;
+    margin: auto;
+    
+    /*For whoe background cover*/
+    background-repeat:no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+/***************For Navigation Bar************************/
+
+nav{
+    width: 100%;
+    height:15vh;
+    background: rgba(0,0,0,0.6);
+    color:#fff;
+    display:flex;/*Side by Side  the Logo and Navigation is kept */
+    justify-content: space-between; /* Space between logo and navigation is kept */
+    align-items: center;/* All the content is aligned exactly aligned at center vetically in its padding  */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo{
+    width:25%; /* Width of BackpackNepal*/
+    text-align: center;
+    font-size: 38px;
+    color:#fff    
+}
+
+.main-nav{ /*For setting overall properties like width and all of naviagtion bar*/
+    width: 40%; /*It takes about 40% space of the whole  padding*/
+    display:flex; /*It keeps them together */
+    justify-content: space-around ; /*It creates equal spacing among them whole */
+}
+
+.main-nav ul{
+    font-size: 0;
+}
+
+.main-nav li{ /*For editting and placing the main-navigation bar in correct order*/
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width:25%; /* Width of BackpackNepal*/
+    text-align: center;
+    font-size: 38px;
+    text-emphasis-color:#fff;
+
+}
+.logo a{
+    color:#fff;
+}
+
+.logo a:hover{
+    color:#fc6e20;
+    transition: all .5s ease;/*For Animation*/
+}
+
+.main-nav a{   /* Inside menu class a tag is accessed and editting properties of Blog Vlog buttons*/
+    color:#fff;
+    font-weight: bold;
+    width:16.66%; /* To occupy exact same width all three options*/
+}
+.main-nav a:hover{
+    color:#fc6e20;
+    transition: all .5s ease;/*For Animation*/
+}
+
+.first-child a{
+    color:#fc6e20;
+}
+.first-child a:hover{
+    color:#fff;
+    transition: all .5s ease;
+}
+
+/*****************For Sub Menu**************/
+.sub-menu-1{
+    display:none;
+}
+.main-nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #fc6e20;
+    margin-top:5px ;
+    margin-left: -10px;
+    border: #fff;
+}
+
+.main-nav ul li:hover .sub-menu-1 ul{
+    display: block;
+    position: absolute;    
+}
+
+.main-nav ul li:hover .sub-menu-1 ul li{
+    width:100px;
+    padding:7px;    
+}
+
+
+/*-------------------For Main Body -------------------*/
+
+main{
+    width:100%;
+    height:680px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align:center;
+}
+
+
+section h3{
+    font-size:36px;
+    font-weight: 300;
+    letter-spacing:2px;
+    text-shadow:1px 2px 2px black;
+}
+
+section h1{
+    margin-top:30px;
+    margin-bottom: 25px;
+    font-size:64px;
+    font-weight:600;
+    text-shadow: 2px 1px 5px black;
+}
+
+section{
+    padding-bottom:200px;
+}
+section p{
+    font-size: 22px;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 1px black; /*Horizontally vertically blur Color*/
+}
+
+section a{
+    padding:12px 30px;
+    border-radius:20px;
+    outline:none;
+    font-size:16px;
+    font-weight: 500;
+    text-decoration:none;
+    transition: all .5s ease;/*For Animation*/
+
+}
+
+.buttonone{
+    background: #fc6e20;
+    color:#fff;
+    margin-right: 20px;
+}
+
+/*Change button color*/
+.buttonone:hover{
+    background:#fff;
+    color: #fc6e20;
+}
+.buttontwo{
+    background: #fff;
+    color:#fc6e20;
+}
+.buttontwo:hover{
+    background: #fc6e20;
+    color:#fff;
+}
+
+/*----------------For Clock-----------------*/
+.datetime{
+    color: #fff;
+    padding: 15px 10px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(255,255,255,0.1));
+    transition: 0.5s;
+    transition-property:background, box-shadow;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing:3px;
+}
+
+.time{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing:3px;
+}
+
+.time span:last-child{
+    background: #fc6e20;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+/*---------Animations------*/
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color:#fc6e20;
+    text-transform: uppercase;
+}
+@keyframes changetext{
+    0%{content: "Apple";}
+    20%{content: "Acer";}
+    40%{content: "HP";}
+    60%{content: "Samsung";}
+    80%{content: "Asus";}
+    100%{content: "Fantech";}
+}
+
+
+
+/*----------------For Footer--------*/
+footer{
+    width:100%;
+    text-align: center;/*For aligning text at the end in center*/
+    justify-content: end;
+    color: #fc6e20;
+    background-color:rgba(0,0,0,0.6);;
+    padding: 20px;
+}
+
+#pageFooter a{
+    color:#fc6e20;
+}
+
+#pageFooter a:hover{
+    color: #fff;
+}
+
