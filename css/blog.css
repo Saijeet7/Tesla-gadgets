@@ -9,7 +9,7 @@
 body{  /* for tag*/
     width: 100%;
     height: 100%;
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('../image/background.jpg');/*For gradient effect and background image*/
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('../image/1.jpg');/*For gradient effect and background image*/
     background-size:100% 100%;
     margin: auto;
     
@@ -32,7 +32,7 @@ nav{
 }
 
 .logo{
-    width:25%; /* Width of BackpackNepal*/
+    width:25%; /* Width */
     text-align: center;
     font-size: 38px;
     color:#fff    
@@ -61,7 +61,7 @@ a{
 }
 
 .logo{
-    width:25%; /* Width of BackpackNepal*/
+    width:25%; /* Width */
     text-align: center;
     font-size: 38px;
     text-emphasis-color:#fff;
@@ -104,18 +104,18 @@ main{
 }
 .content{  /*For outter most box design 1st box layup*/
     width:800px;
-    height:500px;
+    height:100%;
     position:relative;
     margin:6% auto;
     border-radius:15px;
     
-    padding:5px;
+    padding:20px;
     background: #fff;
     justify-content:center;
     align-items: center;
-    text-align:center;
+    text-align:left;
     flex-direction:column;
-
+    padding-bottom: 50px;
 }
 
 
@@ -131,20 +131,6 @@ h1{
     position: relative;
 }
 
-
-.social-icons{  /*For fb insta link icons*/
-    margin:30px auto;
-    text-align:center;
-}
-
-.social-icons img{   /*For fb insta link icons*/
-    width: 50px;
-    margin:0 12px;
-    box-shadow:#fff;
-    cursor:pointer;
-    border-radius:30%;
-    border: #fff;
-}
 
 .container{
     position:relative;
@@ -221,4 +207,20 @@ footer{
 #pageFooter a:hover{
     color: #fff;
 }
+
+
+.social-icons{  /*For fb insta link icons*/
+    margin:30px auto;
+    text-align:center;
+}
+
+.social-icons img{   /*For fb insta link icons*/
+    width: 50px;
+    margin:0 12px;
+    box-shadow:#fff;
+    cursor:pointer;
+    border-radius:30%;
+    border: #fff;
+}
+
 
