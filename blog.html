@@ -14,6 +14,32 @@
       crossorigin="anonymous"
     />
 
+    <style>
+        .outer-container{
+            position:relative;
+            justify-content:center;
+            align-items: center;
+            text-align:left;
+            flex-direction:column;
+        }
+
+        button{
+            margin-left:700px;
+            background: #fc6e20;
+            color:#fff;
+            border-radius:6%;/*It makes button round in edge*/
+            border:none;
+            margin-right: 20px;
+            margin-top: 10px;
+            letter-spacing: 1px;
+            transition: all .5s ease;/*For Animation*/
+        }
+                
+        button:hover{
+            background:#fff;
+        color:#fc6e20;
+        }    
+    </style>
     </head>
     <body  onload="initClock()">
         <header class="site-heaader">
@@ -36,30 +62,30 @@
                     </ul>
                 </div>
             </nav>
-        </header>
 
-        <div class="outer-container">
-            <main class="content"><!--For main content-->
-                <div class="container">
-                    <h1>Blog Page</h1>
-                    <div class="information">
-                        <h2>Information System</h2>
-                        <p>
-                            The use of computers, storage, networking, and other physical equipment, infrastructure, and procedures to produce, process, store, protect, and share all types of electronic data is known as information technology (IT). In contrast to technology utilised for personal or leisure reasons, IT is often used in the area of organisational activities. Computing technology and telecommunication are both included in the business usage of IT.
-                            <br><br>                            
-                            The impact of Information Technology in our daily life is huge. Everything we do from the start of our morning to the end of our day starts and ends with information technology. For example, we start our day with e-news, weather, etc. Information Technology has changed our daily life as we used to have. Everything in the world runs with the help of information technology. Every business is now impossible without the use of information technology from brand promotions to the brand awareness. Information technology is vital in our lives because it allows us to deal with the ever-changing nature of our daily lives. Technology provides a variety of methods for accelerating development and exchanging information. Both of these things are ITs goals: to make work simpler and to address a variety of issues.
-                            <br><br>
-                            Information technology helps in the formation and progress of commerce and commerce, and also the generation of maximum production. With advances in technology, the time required for multiple areas to generate cash is now lowered. It offers electronic security, storage, and communication efficiency.
-                            <br><br>
-                            As, in my life Information technology has been playing a vital role, starting from my education to daily life including my works, maintaining my connection with my friends and family through the help of the internet and social media platforms. Basically every new thing I learn is from the help of this growing IT. Humans without  the use of information technology are like the people in the stone age era. People with the right use of IT have loads of prospects in their career. 
-                            </p>
-                    </div>
-                </div>                
-            </main>
-            </div>>
-        </header>
-       
-
+            <div class="outer-container">
+                <button onclick="togglePopup()" class="pop-button" style="margin-top:30px; font-size:12px; font-weight:bold; padding:12px 45px;">Show Blog</button>
+                <div class="popup" id="popup-1">
+                    <main class="content"><!--For main content-->
+                        <div class="container">
+                            <h1>Blog Page</h1>
+                            <div class="information">
+                                <h2>Information System</h2>
+                                <p>
+                                    The use of computers, storage, networking, and other physical equipment, infrastructure, and procedures to produce, process, store, protect, and share all types of electronic data is known as information technology (IT). In contrast to technology utilised for personal or leisure reasons, IT is often used in the area of organisational activities. Computing technology and telecommunication are both included in the business usage of IT.
+                                    <br><br>                            
+                                    The impact of Information Technology in our daily life is huge. Everything we do from the start of our morning to the end of our day starts and ends with information technology. For example, we start our day with e-news, weather, etc. Information Technology has changed our daily life as we used to have. Everything in the world runs with the help of information technology. Every business is now impossible without the use of information technology from brand promotions to the brand awareness. Information technology is vital in our lives because it allows us to deal with the ever-changing nature of our daily lives. Technology provides a variety of methods for accelerating development and exchanging information. Both of these things are ITs goals: to make work simpler and to address a variety of issues.
+                                    <br><br>
+                                    Information technology helps in the formation and progress of commerce and commerce, and also the generation of maximum production. With advances in technology, the time required for multiple areas to generate cash is now lowered. It offers electronic security, storage, and communication efficiency.
+                                    <br><br>
+                                    As, in my life Information technology has been playing a vital role, starting from my education to daily life including my works, maintaining my connection with my friends and family through the help of the internet and social media platforms. Basically every new thing I learn is from the help of this growing IT. Humans without  the use of information technology are like the people in the stone age era. People with the right use of IT have loads of prospects in their career. 
+                                    </p>
+                            </div>
+                        </div>                
+                    </main>
+                </div>
+            </div>
+    </header>
         <footer id="pageFooter"><!--For page footer-->
             <span>Copyright TeslaGadget &copy; 2022.</span>
             <a href="contactus.html">Contact Us</a>
@@ -69,6 +95,10 @@
                 <a href="https://www.instagram.com/?hl=en" class="social" target="_blank"><img src="image/instagram.png"></a>
             </div>
          </footer>
-
+    <script>
+        function togglePopup(){
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+    </script>
     </body>
 </html>
