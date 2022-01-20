@@ -67,14 +67,14 @@
 
                 </div>
                 <div class="contactForm">
-                    <form>
+                    <form name="contact_form" onsubmit="validateForm()">
                         <h2>Send Message</h2>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name'name' required="required">
                             <span class="span">Full Name</span>
                         </div>    
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name='email' required="required">
                             <span class="span">Email</span>
                         </div>    
                         <div class="inputBox">
@@ -82,7 +82,7 @@
                             <span class="span">Type your Message...</span>
                         </div>
                         <div class="inputBox">
-                            <input type="submit" name="" value="Send">
+                            <input type="submit" value="Send">
                         </div>        
                     </form>
                 </div>
@@ -97,6 +97,19 @@
                 <a href="https://www.instagram.com/?hl=en" class="social" target="_blank"><img src="image/instagram.png"></a>
             </div>
          </footer>
-
+        
+         <script>
+            /*Writing JavaScript Codes*/
+            function validateForm() {
+                var name = document.forms['contact_form']['name'].value;
+                var email = document.forms['contact_form']['email'].value;
+                if (name == "" || email == "") {
+                    alert("Please fill in information for Sending Message");
+                } else {
+                    alert("Thank You for your response!");
+                }
+            }
+        </script>
+    
     </body>
 </html>
