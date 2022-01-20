@@ -32,7 +32,7 @@ nav{
 }
 
 .logo{
-    width:25%; /* Width of BackpackNepal*/
+    width:25%; /* Width */
     text-align: center;
     font-size: 38px;
     color:#fff    
@@ -61,7 +61,7 @@ a{
 }
 
 .logo{
-    width:25%; /* Width of BackpackNepal*/
+    width:25%; /* Width*/
     text-align: center;
     font-size: 38px;
     text-emphasis-color:#fff;
@@ -131,9 +131,8 @@ main{
     margin:20 20px;
     }
 
-img{
+.img{
     max-width: 100%;
-    padding:10px;
 }
 .col-2{/*For outer box containing description*/ 
     background-color:#1b1b1b;
@@ -159,24 +158,30 @@ img{
 
 }
 
-.col-2 h2{/*For Booking name*/
+.col-2 h2{/*For Product name*/
     padding-left:10px;
-    text-align: left;
+    text-align: center;
     margin:10px 5px;
     font:32px;
     color: #fc6e20;
+    text-transform: uppercase;
 }
 
 
 .col-2 h3{/*For price name*/
-    text-align: left;
+    text-align: center;
     margin:10px 5px;
     font: 20px;
 }
 
-img{
+.col-2 p{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.img{
     width:  350px;
-    height: 200px;
+    height: 350px;
     display: inline-block;
     object-fit: cover;
     border-radius: 3px;
@@ -239,4 +244,20 @@ footer{
 #pageFooter a:hover{
     color: #fff;
 }
+
+
+.social-icons{  /*For fb insta link icons*/
+    margin:30px auto;
+    text-align:center;
+}
+
+.social-icons img{   /*For fb insta link icons*/
+    width: 50px;
+    margin:0 12px;
+    box-shadow:#fff;
+    cursor:pointer;
+    border-radius:30%;
+    border: #fff;
+}
+
 
